@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hangman Game</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+  <h1 id="gameTitle"> HANGMAN </h1>
+  <div id ="gallows"> <img src = "gallows0.png"> </div>
+
+  <div id ="stats"> Games Won: <score id ="score1"> </score>
+  <br>
+  Games Lost: <score id ="score2"> </score> </div>
+
+  <div id ="puzzle"> </div>
+  <br>
+  <div id ="prompt"> Guess a Letter: </div>
+  <form>
+    <input type = "text" maxlength="1"  id = "letterEntry" value="" placeholder="_">
+    <input type = "button"  id = "submit" value="Guess">
+    <br>
+  </form>
+  <div id ="message">&nbsp;</div>
+  <div> Wrong Letters:&nbsp;<a id = "incorrectLetters"> &nbsp; </a> </div>
+  <br>
+  <form>
+    <input type = "button"  id = "reset" value="New Puzzle">
+  </form>
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
